@@ -26,15 +26,11 @@ import atom.data
 import rst2post
 
 def main():
-    # Wrap stdout with an encoding-aware writer.
-    locale.setlocale(locale.LC_ALL, '')
-    lang, encoding = locale.getdefaultlocale()
-    sys.stdout = codecs.getwriter(encoding)(sys.stdout)
-
-    parser = argparse.ArgumentParser(description='PSF Blog publishing client')
-    #parser.add_argument('--user-id', '-u', action='store', dest='user_id', default='')
-    parser.add_argument('-b', '--blog', action='store')
-    parser.add_argument('filename', action='store')
+    parser = argparse.ArgumentParser(description='Blogger client')
+    parser.add_argument('-b', '--blog', action='store',
+                        help='title of the blog to receive the new draft')
+    parser.add_argument('filename', action='store',
+                        help='reST input file')
     options = parser.parse_args()
 
     # Set up console encoding
