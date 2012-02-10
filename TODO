@@ -1,0 +1,23 @@
+# -*- mode: org -*-
+
+* 1.0
+** DONE copy rst2blogger.py from PSF blog repo
+   CLOSED: [2012-02-10 Fri 07:46]
+** DONE convert .py file to a package
+   CLOSED: [2012-02-10 Fri 07:46]
+** DONE remove PSF blog info from script
+   CLOSED: [2012-02-10 Fri 07:46]
+** TODO create a setup.py
+   - [ ] entry point for console script
+** TODO let user specify title of blog instead of short names
+   - if you only have one blog, assume it is default, otherwise
+     require an id
+
+* Improvements
+** TODO replace BeautifulSoup with newer scraping library
+** TODO invoke docutils without shelling out to another process
+** TODO code syntax highlighting
+** TODO use a config file for short names for blogs
+** TODO cli option to publish
+** TODO cli option to set future publication date
+** TODO cache auth credentials
