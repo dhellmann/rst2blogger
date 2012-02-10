@@ -26,6 +26,11 @@ import atom.data
 import rst2post
 
 def main():
+    # Wrap stdout with an encoding-aware writer.
+    locale.setlocale(locale.LC_ALL, '')
+    lang, encoding = locale.getdefaultlocale()
+    sys.stdout = codecs.getwriter(encoding)(sys.stdout)
+
     parser = argparse.ArgumentParser(description='PSF Blog publishing client')
     #parser.add_argument('--user-id', '-u', action='store', dest='user_id', default='')
     parser.add_argument('-b', '--blog', action='store')
@@ -71,6 +76,10 @@ def main():
         if len(blogs_by_title.keys()) == 1:
             options.blog = blogs_by_title.keys()[0]
         else:
+            print 'Available blogs:'
+            for t in sorted(blogs_by_title.keys()):
+                print u'- %s' % t
+            print
             raise RuntimeError, 'Please specify the blog title with --blog'
     target_blog = blogs_by_title[options.blog]
     target_blog_id = target_blog.get_blog_id()

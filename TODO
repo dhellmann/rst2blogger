@@ -7,17 +7,25 @@
    CLOSED: [2012-02-10 Fri 07:46]
 ** DONE remove PSF blog info from script
    CLOSED: [2012-02-10 Fri 07:46]
-** TODO create a setup.py
-   - [ ] entry point for console script
-** TODO let user specify title of blog instead of short names
+** DONE create a setup.py
+   CLOSED: [2012-02-10 Fri 16:20]
+   - [X] entry point for console script
+** DONE let user specify title of blog instead of short names
+   CLOSED: [2012-02-10 Fri 16:20]
    - if you only have one blog, assume it is default, otherwise
      require an id
 
+
 * Improvements
 ** TODO replace BeautifulSoup with newer scraping library
+** TODO tags for posts embedded in rst
 ** TODO invoke docutils without shelling out to another process
 ** TODO code syntax highlighting
 ** TODO use a config file for short names for blogs
 ** TODO cli option to publish
 ** TODO cli option to set future publication date
-** TODO cache auth credentials
+** TODO better auth credential handling
+   - cache
+   - switches
+   - config file
+
