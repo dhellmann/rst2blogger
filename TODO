@@ -18,7 +18,8 @@
 ** DONE invoke docutils without shelling out to another process
    CLOSED: [2012-02-10 Fri 17:04]
 
-** TODO replace BeautifulSoup with newer scraping library
+** DONE replace BeautifulSoup with newer scraping library
+   CLOSED: [2012-02-10 Fri 17:26]
 
 
 * Improvements

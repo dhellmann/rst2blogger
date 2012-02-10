@@ -46,7 +46,7 @@ setup(
     provides=['rst2blogger',
               ],
     install_requires=[
-        'BeautifulSoup>=3.2.0',
+        'pyquery>=1.1.1',
         'distribute',
         'docutils>=0.8.1',
         'gdata>=2.0.16',

@@ -7,7 +7,7 @@ Requires BeautifulSoup 3.0.8.1 and docutils.
 If you're a Mac user, see also http://pypi.python.org/pypi/rst2marsedit
 """
 
-from BeautifulSoup import BeautifulSoup
+from pyquery import PyQuery
 
 from docutils.core import publish_string
 
@@ -35,8 +35,8 @@ def format_post(rst_file, initial_header_level=4):
 
     # Pull out the body of the HTML to make the blog post,
     # removing the H1 element with the title.
-    body = soup.find('body')
-    title = ''.join(' '.join(unicode(c) for c in h1.extract().contents)
-                    for h1 in body.findAll('h1'))
-    content = ''.join(unicode(c) for c in body.contents).strip()
+    d = PyQuery(html, parser='html')
+    title = d('body').find('h1:first').html()
+    d('body').find('h1:first').remove()
+    content = d('body').html()
     return title, content
