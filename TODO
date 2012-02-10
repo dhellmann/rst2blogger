@@ -15,11 +15,14 @@
    - if you only have one blog, assume it is default, otherwise
      require an id
 
+** DONE invoke docutils without shelling out to another process
+   CLOSED: [2012-02-10 Fri 17:04]
+
+** TODO replace BeautifulSoup with newer scraping library
+
 
 * Improvements
-** TODO replace BeautifulSoup with newer scraping library
 ** TODO tags for posts embedded in rst
-** TODO invoke docutils without shelling out to another process
 ** TODO code syntax highlighting
 ** TODO use a config file for short names for blogs
 ** TODO cli option to publish
@@ -28,4 +31,4 @@
    - cache
    - switches
    - config file
-
+** TODO option to open blog editor url in browser after pushing post up to server
