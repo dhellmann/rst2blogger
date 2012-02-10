@@ -21,15 +21,23 @@
 ** DONE replace BeautifulSoup with newer scraping library
    CLOSED: [2012-02-10 Fri 17:26]
 
+** TODO documentation
+   - [ ] more detailed README
+   - [ ] sphinx docs
 
 * Improvements
-** TODO tags for posts embedded in rst
+** TODO tags for posts
+   - [ ] embedded in rst
+   - [ ] cli switch
 ** TODO code syntax highlighting
+   - [ ] require pygments
+   - [ ] how to detect when to do it?
 ** TODO use a config file for short names for blogs
 ** TODO cli option to publish
+   - default to draft
 ** TODO cli option to set future publication date
 ** TODO better auth credential handling
    - cache
    - switches
    - config file
-** TODO option to open blog editor url in browser after pushing post up to server
+** TODO option to open blog editor url in browser after pushing draft up to server
