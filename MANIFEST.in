@@ -1,5 +1,6 @@
 include setup.py
 include distribute_setup.py
+include README.rst
+include LICENSE.txt
 include tests/*
-recursive-include docs *.rst *.py *.html *.css *.js *.png *.txt
-
+recursive-include docs *.rst *.py

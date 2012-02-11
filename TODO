@@ -21,9 +21,11 @@
 ** DONE replace BeautifulSoup with newer scraping library
    CLOSED: [2012-02-10 Fri 17:26]
 
-** TODO documentation
-   - [ ] more detailed README
-   - [ ] sphinx docs
+** DONE documentation
+   CLOSED: [2012-02-11 Sat 12:33]
+   - [X] more detailed README
+   - [X] sphinx docs
+
 
 * Improvements
 ** TODO tags for posts
