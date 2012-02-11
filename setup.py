@@ -26,6 +26,7 @@ setup(
     
     description = 'Convert reStructuredText to HTML then post on Blogger.com blogs',
     long_description = long_description,
+    license = 'BSD',
     
     author = 'Doug Hellmann',
     author_email = 'doug.hellmann@gmail.com',
