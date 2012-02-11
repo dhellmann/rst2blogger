@@ -2,7 +2,6 @@
 
 PROJECT = 'rst2blogger'
 
-# Change docs/sphinx/conf.py too!
 VERSION = '0.1'
 
 # Bootstrap installation of Distribute
