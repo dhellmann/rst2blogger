@@ -2,7 +2,7 @@
 
 PROJECT = 'rst2blogger'
 
-VERSION = '0.1'
+VERSION = '1.0'
 
 # Bootstrap installation of Distribute
 import distribute_setup
