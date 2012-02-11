@@ -12,10 +12,7 @@ help:
 
 .PHONY: sdist
 sdist: html
-	rm -f dist/*.gz
-	rm -rf docs/website
 	python setup.py sdist
-	cp -v dist/*.gz ~/Desktop
 
 # Documentation
 .PHONY: html
