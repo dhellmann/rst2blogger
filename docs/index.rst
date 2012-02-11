@@ -76,6 +76,11 @@ History
 
  - Initial public release
 
+pre-release
+
+ - This tool started life as a script used by the Python Software
+   Foundation Communications team for posting to the PSF blogs.
+
 Indices and tables
 ==================
 
