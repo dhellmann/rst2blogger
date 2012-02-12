@@ -1,6 +1,6 @@
-=================
- rst2blogger 1.0
-=================
+===================
+ rst2blogger 1.0.1
+===================
 
 rst2blogger is a command line program for converting reStructuredText_
 documents to HTML suitable for posting to blogger.com.  It takes as
@@ -10,6 +10,12 @@ draft to the specified blog.  If the blogger account only has one
 blog, the name does not need to be specified.
 
 See `the project documentation`_ for installation and setup instructions.
+
+Changes
+=======
+
+This release fixes a problem with a dependency on BeautifulSoup and
+adds a few tests.
 
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
 
