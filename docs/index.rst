@@ -75,6 +75,7 @@ History
 1.0.1
 
  - Include fix from btbytes that removes lingering call to BeautifulSoup.
+ - Add a couple of basic tests.
 
 1.0
 

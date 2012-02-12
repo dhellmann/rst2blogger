@@ -14,7 +14,6 @@ help:
 sdist: html
 	python setup.py sdist
 
-# Documentation
 .PHONY: html
 html:
 	python setup.py build_sphinx
@@ -26,23 +25,9 @@ docclean:
 installwebsite: html
 	(cd build/sphinx/html && rsync --rsh=ssh --archive --delete --verbose . www.doughellmann.com:/var/www/doughellmann/DocumentRoot/docs/rst2blogger/)
 
-# Register the new version on pypi
-.PHONY: register
-register:
-	echo "USE upload target"
-	exit 1
-	python setup.py register
-
 .PHONY: upload
 upload:
 	python setup.py sdist upload
 
-# Testing
 test:
-	tox
-
-test-quick:
-	tox -e py27
-
-develop:
-	python setup.py develop
+	python setup.py nosetests

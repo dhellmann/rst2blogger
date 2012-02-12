@@ -15,9 +15,14 @@ def format_post(rst_file, initial_header_level=4):
     """Read the rst file and return a tuple containing the title and
     an HTML string for the post.
     """
-    # Convert RST to HTML
     with open(rst_file, 'r') as f:
         body = f.read()
+    return format_post_from_string(body, initial_header_level)
+
+def format_post_from_string(body, initial_header_level=4):
+    """Returns a tuple containing the title and an HTML string for the
+    post body.
+    """
     try:
         html = publish_string(
             body,
