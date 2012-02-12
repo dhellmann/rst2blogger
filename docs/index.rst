@@ -72,6 +72,10 @@ with an error.
 History
 =======
 
+1.0.1
+
+ - Include fix from btbytes that removes lingering call to BeautifulSoup.
+
 1.0
 
  - Initial public release
