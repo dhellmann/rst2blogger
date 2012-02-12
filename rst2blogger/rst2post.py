@@ -31,7 +31,6 @@ def format_post(rst_file, initial_header_level=4):
             raise ValueError('No HTML produced by docutils')
     except Exception as err:
         raise RuntimeError('Could not convert input file to HTML: %s' % err)
-    soup = BeautifulSoup(html)
 
     # Pull out the body of the HTML to make the blog post,
     # removing the H1 element with the title.
