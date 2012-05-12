@@ -29,7 +29,7 @@ Download the latest release from `the PyPI page`_.
 
 See `the project documentation`_ for installation and setup instructions.
 
-.. _the project documentation: http://www.doughellmann.com/docs/rst2blogger/
+.. _the project documentation: http://rst2blogger.readthedocs.org/
 
 .. _the PyPI page: http://pypi.python.org/pypi/rst2blogger
 
