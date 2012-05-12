@@ -1,0 +1,6 @@
+nose
+pyquery>=1.1.1
+distribute
+docutils>=0.8.1
+gdata>=2.0.16
+nose
