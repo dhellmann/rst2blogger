@@ -11,6 +11,8 @@ parsed with docutils_ to create HTML, and the HTML is uploaded as a
 draft to the specified blog.  If the blogger account only has one
 blog, the name does not need to be specified.
 
+.. image:: https://secure.travis-ci.org/dhellmann/rst2blogger.png?branch=master
+
 .. _reStructuredText: http://docutils.sourceforge.net/rst.html
 
 .. _docutils: http://docutils.sourceforge.net/

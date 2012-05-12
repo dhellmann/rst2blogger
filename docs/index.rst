@@ -72,6 +72,8 @@ with an error.
 History
 =======
 
+.. image:: https://secure.travis-ci.org/dhellmann/rst2blogger.png?branch=master
+
 1.0.1
 
  - Include fix from btbytes that removes lingering call to BeautifulSoup.
