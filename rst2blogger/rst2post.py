@@ -11,6 +11,7 @@ from pyquery import PyQuery
 
 from docutils.core import publish_string
 
+
 def format_post(rst_file, initial_header_level=4):
     """Read the rst file and return a tuple containing the title and
     an HTML string for the post.
@@ -18,6 +19,7 @@ def format_post(rst_file, initial_header_level=4):
     with open(rst_file, 'r') as f:
         body = f.read()
     return format_post_from_string(body, initial_header_level)
+
 
 def format_post_from_string(body, initial_header_level=4):
     """Returns a tuple containing the title and an HTML string for the
@@ -27,9 +29,9 @@ def format_post_from_string(body, initial_header_level=4):
         html = publish_string(
             body,
             writer_name='html',
-            settings_overrides={'initial_header_level':initial_header_level,
-                                'generator':False,
-                                'traceback':True,
+            settings_overrides={'initial_header_level': initial_header_level,
+                                'generator': False,
+                                'traceback': True,
                                 },
             )
         if not html:
