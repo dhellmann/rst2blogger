@@ -50,6 +50,7 @@ setup(
         'distribute',
         'docutils>=0.8.1',
         'gdata>=2.0.16',
+        'lxml',
         ],
 
     packages = find_packages(),
